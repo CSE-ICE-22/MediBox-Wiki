@@ -1,3 +1,23 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+// Apply 125% zoom with centered content
+html {
+    transform: scale(1.25); // Modern approach
+    transform-origin: center top; // Center the transform origin horizontally
+    margin: 0 auto; // Center the content
+    width: 80%; // Compensate for the zoom
+  }
+
+  // Adjust container to center content
+  body {
+    overflow-x: hidden;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .container {
+    margin: 0 auto; // Center the container
+    max-width: 80% !important;
+  }
